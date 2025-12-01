@@ -40,8 +40,10 @@ export interface AuthOptionsFactory {
  * Asynchronous configuration options for the Auth.js module. Supports
  * multiple patterns for dependency injection and dynamic configuration.
  */
-export interface AuthModuleAsyncOptions
-  extends Pick<ModuleMetadata, 'imports'> {
+export interface AuthModuleAsyncOptions extends Pick<
+  ModuleMetadata,
+  'imports'
+> {
   readonly useExisting?: Type<AuthOptionsFactory>;
   readonly useClass?: Type<AuthOptionsFactory>;
   readonly useFactory?: (
