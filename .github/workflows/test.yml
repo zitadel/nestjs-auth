@@ -70,6 +70,7 @@ jobs:
           ACCOUNT_ID: ${{ vars.ACCOUNT_ID }}
 
       - name: Generate coverage report
+        if: always()
         uses: mridang/action-test-reporter@feat/add-test-result-support
         with:
           results-path: '.out/junit.xml'
