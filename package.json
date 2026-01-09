@@ -72,6 +72,7 @@
     "eslint": "9.32.0",
     "fastify": "^5.4.0",
     "jest": "30.0.5",
+    "jest-junit": "^16.0.0",
     "prettier": "3.6.2",
     "reflect-metadata": "0.2.2",
     "semantic-release": "^25.0.1",
