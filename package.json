@@ -1,16 +1,17 @@
 {
-  "name": "@mridang/nestjs-auth",
+  "name": "@zitadel/nestjs-auth",
   "version": "1.4.0",
   "type": "module",
   "description": "A comprehensive Auth.js integration for NestJS applications with TypeScript support, framework-agnostic HTTP adapters, and role-based access control",
   "author": {
     "name": "Mridang Agarwalla",
-    "email": "mridang.agarwalla@gmail.com",
-    "url": "https://github.com/mridang"
+    "email": "mridang@zitadel.com",
+    "url": "https://github.com/zitadel"
   },
   "license": "Apache-2.0",
   "scripts": {
     "prepack": "tsc",
+    "prepare": "npm run build",
     "build": "tsc",
     "test": "jest --verbose --config=jest.config.mjs --runInBand",
     "test:watch": "npm run test -- --watch",
@@ -18,7 +19,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "npx eslint .",
-    "lint:fix": "npx eslint . --fix"
+    "lint:fix": "npx eslint . --fix",
+    "depcheck": "npx knip"
   },
   "files": [
     "dist"
@@ -84,7 +86,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mridang/nestjs-auth"
+    "url": "git+https://github.com/zitadel/nestjs-auth.git"
   },
   "dependencies": {
     "memoize": "^10.1.0",
@@ -94,9 +96,9 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "homepage": "https://github.com/mridang/nestjs-auth",
-  "bugs": "https://github.com/mridang/nestjs-auth/issues",
+  "homepage": "https://github.com/zitadel/nestjs-auth",
+  "bugs": "https://github.com/zitadel/nestjs-auth/issues",
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
   }
 }
