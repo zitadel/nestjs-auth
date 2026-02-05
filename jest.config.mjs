@@ -24,9 +24,9 @@ export default {
   testPathIgnorePatterns: ['/node_modules/', '/frontend/', '/dist/'],
   resetModules: false,
   collectCoverage: true,
-  coverageDirectory: './.out',
+  coverageDirectory: './build/coverage',
   collectCoverageFrom: ['src/**/*.{ts,tsx,js,jsx}', '!src/**/*.d.ts'],
-  coverageReporters: ['lcov', 'text'],
+  coverageReporters: ['clover', 'cobertura', 'lcov'],
   coveragePathIgnorePatterns: ['/dist/', '/node_modules/'],
   testTimeout: 60000,
   extensionsToTreatAsEsm: ['.ts', '.tsx', '.mts'],
@@ -38,7 +38,7 @@ export default {
     [
       'jest-junit',
       {
-        outputDirectory: './.out',
+        outputDirectory: './build/reports',
         outputName: 'junit.xml',
       },
     ],
