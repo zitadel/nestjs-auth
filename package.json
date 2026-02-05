@@ -27,6 +27,15 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./adapters": {
+      "types": "./dist/adapter.d.ts"
+    }
+  },
   "keywords": [
     "nestjs",
     "authjs",
@@ -75,6 +84,7 @@
     "fastify": "^5.4.0",
     "jest": "30.0.5",
     "jest-junit": "^16.0.0",
+    "knip": "^5.83.0",
     "prettier": "3.6.2",
     "reflect-metadata": "0.2.2",
     "semantic-release": "^25.0.1",

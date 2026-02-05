@@ -36,7 +36,7 @@ of applications or deployment scenarios might warrant different approaches:
   authorization beyond simple authentication. This requires seamless
   integration between Auth.js user data and NestJS authorization patterns.
 
-This integration, `@mridang/nestjs-auth`, aims to provide the flexibility to
+This integration, `@zitadel/nestjs-auth`, aims to provide the flexibility to
 handle such scenarios. It allows you to leverage the full Auth.js ecosystem
 while maintaining NestJS best practices, ultimately leading to a more
 effective and less burdensome authentication implementation.
@@ -46,7 +46,7 @@ effective and less burdensome authentication implementation.
 Install using NPM by using the following command:
 
 ```sh
-npm install @mridang/nestjs-auth @auth/core
+npm install @zitadel/nestjs-auth @auth/core
 ```
 
 ## Usage
@@ -63,7 +63,7 @@ First, add the module to your `AppModule`:
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { AuthJsModule } from '@mridang/nestjs-auth';
+import { AuthJsModule } from '@zitadel/nestjs-auth';
 import GoogleProvider from '@auth/core/providers/google';
 
 @Module({
@@ -100,7 +100,7 @@ authentication:
 
 ```typescript
 import { Controller, Get } from '@nestjs/common';
-import { AuthSession, Public, RequireRoles } from '@mridang/nestjs-auth';
+import { AuthSession, Public, RequireRoles } from '@zitadel/nestjs-auth';
 import type { Session } from '@auth/core/types';
 
 @Controller('api')
@@ -136,7 +136,7 @@ providers and custom session configuration:
 ```typescript
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { AuthJsModule } from '@mridang/nestjs-auth';
+import { AuthJsModule } from '@zitadel/nestjs-auth';
 import GoogleProvider from '@auth/core/providers/google';
 import GitHubProvider from '@auth/core/providers/github';
 

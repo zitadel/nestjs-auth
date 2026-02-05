@@ -8,7 +8,7 @@ import type { Session as CoreSession } from '@auth/core/types';
  *
  * Augment in an app with:
  *
- * declare module '@mridang/nestjs-auth' {
+ * declare module '@zitadel/nestjs-auth' {
  *   interface AuthUserAugmentation { roles?: string[] }
  *   interface SessionAugmentation {
  *     idToken?: string; accessToken?: string; refreshToken?: string; error?: string;
