@@ -109,7 +109,6 @@
   "homepage": "https://github.com/zitadel/nestjs-auth",
   "bugs": "https://github.com/zitadel/nestjs-auth/issues",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   }
 }
