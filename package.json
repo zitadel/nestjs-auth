@@ -67,7 +67,7 @@
     "@mridang/eslint-defaults": "^1.6.1",
     "@nestjs/common": "11.1.5",
     "@nestjs/core": "11.1.5",
-    "@nestjs/platform-express": "11.1.5",
+    "@nestjs/platform-express": "11.1.15",
     "@nestjs/testing": "^11.1.5",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/git": "^10.0.1",
@@ -110,5 +110,8 @@
   "bugs": "https://github.com/zitadel/nestjs-auth/issues",
   "publishConfig": {
     "access": "public"
+  },
+  "overrides": {
+    "multer": "2.1.1"
   }
 }
