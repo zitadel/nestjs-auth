@@ -1,3 +1,7 @@
 module.exports = {
-  ignoreDependencies: ['@semantic-release/.*?'],
+  ignore: ['commitlint.config.js'],
+  ignoreDependencies: [
+    '@commitlint/config-conventional',
+    '@semantic-release/.*?',
+  ],
 };
