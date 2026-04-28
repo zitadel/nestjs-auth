@@ -1,5 +1,5 @@
 /** @type {import('typedoc').TypeDocOptions} */
-module.exports = {
+export default {
   entryPoints: ['src/index.ts', 'src/adapter.ts'],
   out: 'docs',
   tsconfig: './tsconfig.json',
