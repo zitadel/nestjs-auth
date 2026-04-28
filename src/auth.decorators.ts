@@ -75,9 +75,6 @@ export const RequireRoles = (...roles: readonly string[]): MethodDecorator =>
  * Returns `null` if no valid session exists (user is not authenticated).
  * Access the user data via `session.user` and session metadata via other properties.
  *
- * @param data - Optional data parameter (not used in this implementation)
- * @param ctx - The execution context provided by NestJS
- *
  * @example
  * ```ts
  * @Controller('profile')
