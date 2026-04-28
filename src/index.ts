@@ -1,3 +1,4 @@
+export * from './adapters/http.adapter.js';
 export * from './auth.guards.js';
 export * from './auth.module.js';
 export * from './auth.decorators.js';
