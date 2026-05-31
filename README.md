@@ -224,4 +224,4 @@ contributions.
 
 ## License
 
-Apache License 2.0 © 2024 Mridang Agarwalla
+Apache-2.0
